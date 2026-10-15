@@ -13,7 +13,7 @@ function Orders() {
             setError("");
 
             const response = await fetch(
-                "http://localhost:3000/orders",
+                "https://shopkart-backend-project-2.onrender.com/orders",
                 {
                     credentials: "include"
                 }

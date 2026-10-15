@@ -18,7 +18,7 @@ function CartProvider({ children }) {
             setError("");
 
             const response = await fetch(
-                "http://localhost:3000/cart",
+                "https://shopkart-backend-project-2.onrender.com/cart",
                 {
                     credentials: "include"
                 }
@@ -46,7 +46,7 @@ function CartProvider({ children }) {
 
     async function addToCart(productId) {
         const response = await fetch(
-            `http://localhost:3000/cart/${productId}`,
+            `https://shopkart-backend-project-2.onrender.com/cart/${productId}`,
             {
                 method: "POST",
                 credentials: "include"
@@ -68,7 +68,7 @@ function CartProvider({ children }) {
 
     async function updateQuantity(productId, quantity) {
         const response = await fetch(
-            `http://localhost:3000/cart/${productId}`,
+            `https://shopkart-backend-project-2.onrender.com/cart/${productId}`,
             {
                 method: "PATCH",
                 headers: {
@@ -96,7 +96,7 @@ function CartProvider({ children }) {
 
     async function removeFromCart(productId) {
         const response = await fetch(
-            `http://localhost:3000/cart/${productId}`,
+            `https://shopkart-backend-project-2.onrender.com/cart/${productId}`,
             {
                 method: "DELETE",
                 credentials: "include"

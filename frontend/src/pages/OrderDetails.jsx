@@ -13,7 +13,7 @@ function OrderDetails() {
         async function fetchOrder() {
             try {
                 const response = await fetch(
-                    `http://localhost:3000/orders/${id}`,
+                    `https://shopkart-backend-project-2.onrender.com/orders/${id}`,
                     {
                         credentials: "include"
                     }

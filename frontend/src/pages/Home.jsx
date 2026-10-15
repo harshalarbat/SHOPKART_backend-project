@@ -11,7 +11,7 @@ function Home() {
 
         async function getCustomer() {
 
-            const response = await fetch("http://localhost:3000/customers/me", {
+            const response = await fetch("https://shopkart-backend-project-2.onrender.com/customers/me", {
                 credentials: "include"
             });
 
@@ -31,7 +31,7 @@ function Home() {
 
     async function handleLogout() {
 
-    await fetch("http://localhost:3000/customers/logout", {
+    await fetch("https://shopkart-backend-project-2.onrender.com/customers/logout", {
         method: "POST",
         credentials: "include"
     });

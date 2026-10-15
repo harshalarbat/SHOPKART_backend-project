@@ -20,16 +20,18 @@ const port = 3000;
 
 // CORS
 
+
 app.use(
     cors({
         origin: [
             "http://localhost:5173",
-            "http://localhost:5175"
+            "http://localhost:5175" ,
              "https://shopkart-backend-project-harshal-14cd.vercel.app"
         ],
         credentials: true
     })
 );
+
 
 
 // Middleware

@@ -96,7 +96,7 @@ function Checkout() {
             }
 
             const response = await fetch(
-                "http://localhost:3000/orders/create-payment-order",
+                "https://shopkart-backend-project-2.onrender.com/orders/create-payment-order",
                 {
                     method: "POST",
                     headers: {
@@ -133,7 +133,7 @@ function Checkout() {
                 handler: async function (paymentResponse) {
                     try {
                         const verifyResponse = await fetch(
-                            "http://localhost:3000/orders/verify-payment",
+                            "https://shopkart-backend-project-2.onrender.com/orders/verify-payment",
                             {
                                 method: "POST",
                                 headers: {

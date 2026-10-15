@@ -30,7 +30,7 @@ function Wishlist() {
 
 
             const response = await fetch(
-                "http://localhost:3000/wishlist",
+                "https://shopkart-backend-project-2.onrender.com/wishlist",
                 {
                     credentials: "include"
                 }
@@ -70,7 +70,7 @@ function Wishlist() {
         try {
 
             const response = await fetch(
-                `http://localhost:3000/wishlist/${productId}`,
+                `https://shopkart-backend-project-2.onrender.com/wishlist/${productId}`,
                 {
                     method: "DELETE",
                     credentials: "include"

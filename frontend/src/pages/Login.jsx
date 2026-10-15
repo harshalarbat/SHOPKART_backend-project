@@ -23,7 +23,7 @@
 //             password: password
 //         };
 
-//         const response = await fetch("http://localhost:3000/customers/login", {
+//         const response = await fetch("https://shopkart-backend-project-2.onrender.com/customers/login", {
 //             method: "POST",
 //             headers: {
 //                 "Content-Type": "application/json"
@@ -104,7 +104,7 @@ function Login() {
 
         try {
             const response = await fetch(
-                "http://localhost:3000/customers/login",
+                "https://shopkart-backend-project-2.onrender.com/customers/login",
                 {
                     method: "POST",
                     headers: {

@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://shopkart-backend-project-2.onrender.com";
 
 export const getProducts = async (search = "", category = "") => {
     let url = `${API_URL}/products`;

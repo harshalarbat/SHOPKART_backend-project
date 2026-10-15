@@ -52,7 +52,7 @@ function Register() {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/customers/register",
+                "https://shopkart-backend-project-2.onrender.com/customers/register",
                 {
                     method: "POST",
                     headers: {
