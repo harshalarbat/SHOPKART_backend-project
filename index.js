@@ -21,14 +21,21 @@ const port = 3000;
 // CORS
 
 
+
 app.use(
     cors({
-        origin: [
-            "http://localhost:5173",
-            "http://localhost:5175" ,
-             "https://shopkart-backend-project-harshal-14cd.vercel.app",
-             "https://shopkart-backend-project-27u4kgiu8-harshal-14cd.vercel.app"
-        ],
+        origin: (origin, callback) => {
+            if (
+                !origin ||
+                origin === "http://localhost:5173" ||
+                origin === "http://localhost:5175" ||
+                /^https:\/\/shopkart-backend-project(-[a-z0-9]+)?-harshal-14cd\.vercel\.app$/.test(origin)
+            ) {
+                callback(null, true);
+            } else {
+                callback(new Error("Not allowed by CORS"));
+            }
+        },
         credentials: true
     })
 );
